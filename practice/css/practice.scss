@@ -1,0 +1,93 @@
+$primary_color : #0d4974;
+$secondary_color : #c2d7e0;
+
+%division  {
+        width: 200px;
+        padding: 10px;
+        display: inline-block;
+        background-color: white;
+        text-align: center;
+}
+
+* {
+    margin: 0px;
+    #header {
+        background-color: $primary_color;
+        width: 100%;
+        height: 100px;
+        color: $secondary_color;
+        font-family:'lucida handwriting';
+        font-weight: bold;
+    }
+};
+
+svg {
+    max-width: 50px;
+    max-height: 26px;
+    display: inline-block;
+    margin-top: 50px;
+    circle {
+        r: 10px;
+        stroke: $secondary_color;
+        stroke-width: 5px;
+        fill: transparent;
+        cx: 35;
+        stroke-dasharray: 1px;
+        cy: 12.5;
+    }
+}
+
+#news {
+    margin: 10px 0px;
+    width: 100%;
+    font-family: monospace;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+input[type ="text"] {
+    margin: 10px;
+    width: 250px;
+    height: 25px;
+    font-family: monospace;
+    border-radius: 5px;
+    border: 2px solid $primary_color;
+}
+input[type = "submit"] {
+    margin: 5px 10px;
+    height: 25px;
+    background-color: $primary_color;
+    border: none;
+    box-shadow: 0px 2px 2px $secondary_color;
+    font-family: monospace;
+    font-weight: bold;
+    color: $secondary_color;
+}
+input[type="submit"]:hover {
+    background-color:#4d6272;
+}
+
+.result {
+    @extend%division;     
+        box-shadow: 0px -1px 5px #09263b;
+        border-radius: 10px;
+        margin: 20px 10px;
+        box-sizing: border-box;
+    figure {
+        img {
+            width: 170px;
+            height: 200px;
+        }
+        figcaption {
+            display: block;
+            font-family: cursive;
+            color:#09263b;
+            font-size: 15px;
+        }
+    }
+    p {
+        font-family: monospace;
+        font-weight: bold;
+        padding: 5px;
+    }
+}
